@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.camel</groupId>
+	<artifactId>com.camel</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>microservicecamel</name>
+	<properties>
+		<java.version>11</java.version>
+		<camel.version>2.23.1</camel.version>
+		<project.build.sourceEnconding>UTF-8</project.build.sourceEnconding>
+		<project.reporting.outputEnconding>UTF-8</project.reporting.outputEnconding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring-boot</artifactId>
+			<version>${camel.version}</version><!-- use the same version as your Camel 
+				core version -->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>2.2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-cloud-starter-consul-config</artifactId>
+			<version>2.2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+ 			<version>2.2.6</version> 
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring-boot-starter</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>${camel.version}</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-aws</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+	<groupId>org.apache.camel</groupId>
+	<artifactId>camel-test-spring</artifactId>
+	<version>${camel.version}</version>
+	<scope>test</scope>
+</dependency>
+<dependency>
+	<groupId>org.apache.camel</groupId>
+	<artifactId>camel-test</artifactId>
+	<version>${camel.version}</version>
+	<scope>test</scope>
+</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-collections4</artifactId>
+		<version>4.4</version>		
+	</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-csv</artifactId>
+		<version>1.4</version>		
+	</dependency>
+	<dependency>
+		<groupId>com.amazonaws</groupId>
+		<artifactId>aws-java-sdk-core</artifactId>
+		<version>1.11.921</version>		
+	</dependency>
+	<dependency>
+		<groupId>com.amazonaws</groupId>
+		<artifactId>aws-java-sdk-s3</artifactId>
+		<version>1.11.921</version>
+	</dependency>
+	<dependency>
+		<groupId>com.amazonaws</groupId>
+		<artifactId>aws-java-sdk-sqs</artifactId>
+		<version>1.11.921</version>
+	</dependency>
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-test</artifactId>
+	 <version>2.4.3</version>
+	<scope>test</scope>
+	<exclusions>
+		<exclusion>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+		</exclusion>
+	</exclusions>
+</dependency>
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-runner</artifactId>
+    <version>1.7.1</version>
+    <scope>test</scope>
+</dependency>
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+		<version>2.2.6.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.12</version>
+		<scope>provided</scope>
+	</dependency>
+</dependencies>
+
+
+
+</project>
